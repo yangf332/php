@@ -13,6 +13,11 @@ php
     关闭版本信息：     expose_php=off
     关闭注册全局变量： register_globals=off
 
+### 反射
+   在PHP运行状态中，扩展分析PHP程序，导出或提取出关于类、方法、属性、参数等的详细信息，包括注释。这种动态获取的信息以及动态调用对象的方法的功能称为反射API。
+   $class = new ReflectionClass('Cloud');
+   $properties = $class->getProperties();
+   $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE)
 
 ## 网上资料
 
