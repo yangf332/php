@@ -19,6 +19,14 @@ php
    $properties = $class->getProperties();
    $private_properties = $class->getProperties(ReflectionProperty::IS_PRIVATE)
 
+### 作用域关键字
+    public、private和protected是在PHP5中引入的。在PHP4下无法正常运行。
+    在PHP4中，所有属性都用var声明，考虑到向后兼容，PHP5保留了var，并自动转换为public。
+
+### 其它
+    * 一个类可以同时继承一个父类和实现任意个接口。extends子句应该在implements子句之前。
+        class Ebook extends Book implements Readable, Writeable {}
+
 ## 网上资料
 
 [manual](http://www.php.net/manual/zh/ "manual")
