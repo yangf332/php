@@ -11,5 +11,6 @@ PHP
 
 ### 安全
 [safe_mode](safe/safe_mode.md)
+[sql_injection](safe/sql_injection.md)
 
 ### 书籍
