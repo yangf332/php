@@ -9,8 +9,14 @@ PHP
 ### 魔术方法
 [单例模式](magic_methods.php)
 
+### 正则表达式
+[正则](regular_expression.php)
+
 ### 安全
 [safe_mode](safe/safe_mode.md)
 [sql_injection](safe/sql_injection.md)
+
+### 优化
+[扩展多服务器](server.md)
 
 ### 书籍
