@@ -2,21 +2,20 @@
 
 class Singleton
 {
-    // 保存类唯一实例的静态成员变量
     private static $instance;
 
-    // 构造函数和克隆函数必须为私有
+    /**
+     * 构造函数必须私有化
+     */
     private function __construct()
-    {
+    {}
 
-    }
-
+    /**
+     * clone函数必须私有化
+     */
     private function __clone()
-    {
+    {}
 
-    }
-
-    // 访问实例的公共静态方法
     public static function getInstance()
     {
         if (!self::$instance instanceof self) {
@@ -28,10 +27,9 @@ class Singleton
 
     public function display()
     {
-        print 'hello, singleton';
+        print "hello, singleton";
     }
 }
-
 
 class Client
 {
@@ -41,7 +39,6 @@ class Client
         $s->display();
     }
 }
-
 
 Client::main();
 

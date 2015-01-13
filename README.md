@@ -7,7 +7,7 @@ PHP
 [简单工厂模式](design_pattern/simple_factory.php)
 
 ### 魔术方法
-[单例模式](magic_methods.php)
+[魔术方法](magic_methods.php)
 
 ### 正则表达式
 [正则](regular_expression.php)

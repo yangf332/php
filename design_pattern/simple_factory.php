@@ -21,6 +21,7 @@ class OperationSub extends Operation
     }
 }
 
+
 class OperationMul extends Operation
 {
     public function getValue($num1, $num2)
@@ -62,22 +63,19 @@ class Factory
             case '/':
                 return new OperationDiv();
                 break;
-
         }
     }
 }
-
 
 class Client
 {
     public static function main()
     {
         $o = Factory::create('+');
-        $ret = $o->getValue(3, 7);
-        echo $ret;
+        $result = $o->getValue(3, 100);
+        echo $result;
     }
+
 }
 
-
 Client::main();
-
