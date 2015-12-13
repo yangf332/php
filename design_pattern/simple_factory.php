@@ -79,3 +79,6 @@ class Client
 }
 
 Client::main();
+
+// Thinking
+// 调用工厂类的方法生成不同的类的实例，通过多态实现类似的操作

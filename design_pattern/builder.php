@@ -81,3 +81,6 @@ class Client
 }
 
 Client::main();
+
+// Thinking
+// 封装固定的操作流程

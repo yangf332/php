@@ -100,3 +100,6 @@ class Client
 }
 
 Client::main();
+
+// Thinking
+// 为了复用代码而做的适应性封装

@@ -65,3 +65,6 @@ class Client
 }
 
 Client::main();
+
+// Thinking
+// 对多个实例进行层层包装，并通过多态使每一层的实例都执行生效
