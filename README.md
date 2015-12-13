@@ -22,7 +22,9 @@ PHP
 [简单工厂模式](design_pattern/simple_factory.php)
 
 
-### 调试测试
+### 调试&&测试
+[debug](debug/debug.md) TODO gdb
+
 [PHPUnit]()
 
 [Xdebug]()
