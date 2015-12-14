@@ -16,7 +16,7 @@ PHP - Debug
 * error_reporting, display_errors, log_errors, error_log
   - error_reporting = E_ALL & ~E_NOTICE
 * 错误抛出和处理
-  - trigger_error
+  - trigger_errorg
     - E_USER_ERROR
     - E_USER_WARNING
     - E_USER_NOTICE
@@ -27,7 +27,33 @@ PHP - Debug
 * ini_get(), ini_get_all(), ini_get_all('session');
 * 如果想读取php.ini文件中的初始值，使用**get_cfg_var()**;
 
-#### TODO gdb
+#### gdb
+* 调试可执行文件
+  - gcc -g debug.c -o debug // 必须加上-g选项
+  - gdb debug
+  - list 
+* 命令
+  - start
+  - list, l {function_name}, l {line_number}
+  - next, n
+  - step, s
+  - print, p
+  - quit, q
+  - backtrace, bt
+  - info locals, i locals
+  - set var
+  - break // 打断点
+    - info break
+* PHP的代码包中提供了一个 .gdbinit 的gdb脚本文件，里面提供了20多个 gdb 的自定义命令
+  - print_cvs 
+  - printzv
+  - zbacktrace
+  - print_ft
+  
 
 ### 相关资料
 [PHP调试技术手册](http://www.laruence.com/2010/06/21/1608.html)
+
+[Linux学习--gdb调试](http://www.cnblogs.com/hankers/archive/2012/12/07/2806836.html)
+
+[Debugging with GDB](http://www.delorie.com/gnu/docs/gdb/gdb_toc.html)
