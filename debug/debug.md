@@ -66,11 +66,24 @@ PHP - Debug
     - void xdebug_debug_zval( [string varname [, ...]] )
     - void xdebug_debug_zval_stdout( [string varname [, ...]] )
     - ini_set('xdebug.var_display_max_children', -1 );
+    - xdebug_call_class(), , xdebug_call_file(), xdebug_call_line()
 * Stack Traces
+  - xdebug_get_function_stack(), xdebug_start_trace('trace'), xdebug_stop_trace(),
 * Function Traces
+  - xdebug_call_function()
 * Code Coverage Analysis
+  - xdebug_start_code_coverage( [int options] )
+    - XDEBUG_CC_UNUSED     // 未被调用过的
+    - XDEBUG_CC_DEAD_CODE  // 僵尸代码
+    - xdebug_stop_code_coverage();
+    - array xdebug_get_code_coverage();
+      - [filename][line] = numberofcalls
 * Profiling PHP Scripts
+  - xdebug_memory_usage()
+  - xdebug_peak_memory_usage() //返回启动脚本后脚本所使用内存高峰值
+  - xdebug_time_index() // 脚本执行总时间
 * Remote Debugging
+
 
 
 ### 相关资料
