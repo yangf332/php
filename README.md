@@ -23,11 +23,9 @@ PHP
 
 
 ### 调试&&测试
-[debug](debug/debug.md) TODO gdb
+[debug, Xdebug](debug/debug.md) TODO gdb
 
 [PHPUnit]()
-
-[Xdebug]()
 
 ### 优化
 [扩展多服务器](server.md)

@@ -50,6 +50,28 @@ PHP - Debug
   - zbacktrace
   - print_ft
   
+#### xdebug
+* Basic Features
+* Variable Display Features
+    - ;是否覆盖php里面的函数var_dump();默认是开启的，值为1；设为0，则关闭；
+    - xdebug.overload_var_dump = 1
+    - ;控制数组子元素显示的大小默认为256
+    - xdebug.var_display_max_children = 256
+    - ;控制变量打印的大小，默认为512
+    - xdebug.var_display_max_data = 512
+    - ;控制数组和对象元素显示的层级。默认为3
+    - xdebug.var_display_max_depth = 3
+    - ini_set('xdebug.var_display_max_children', 3 );
+    - void var_dump( [mixed var [, ...]] )
+    - void xdebug_debug_zval( [string varname [, ...]] )
+    - void xdebug_debug_zval_stdout( [string varname [, ...]] )
+    - ini_set('xdebug.var_display_max_children', -1 );
+* Stack Traces
+* Function Traces
+* Code Coverage Analysis
+* Profiling PHP Scripts
+* Remote Debugging
+
 
 ### 相关资料
 [PHP调试技术手册](http://www.laruence.com/2010/06/21/1608.html)
@@ -57,3 +79,5 @@ PHP - Debug
 [Linux学习--gdb调试](http://www.cnblogs.com/hankers/archive/2012/12/07/2806836.html)
 
 [Debugging with GDB](http://www.delorie.com/gnu/docs/gdb/gdb_toc.html)
+
+[xdebug.org](http://xdebug.org/docs/)
