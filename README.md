@@ -5,9 +5,11 @@ PHP
 ### 基础内容
 [魔术方法](magic_methods.php)
 
-[反射API]()
+[反射API](reflection.md)
 
 [国际化和本地化](basic/location.md)
+
+[未分类](basic/uncategorized.md)
 
 
 ### 正则表达式
