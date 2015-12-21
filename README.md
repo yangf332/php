@@ -23,6 +23,8 @@ PHP
 
 [简单工厂模式](design_pattern/simple_factory.php)
 
+[策略模式](design_pattern/strategy.php)
+
 
 ### 调试&&测试
 [debug, Xdebug](debug/debug.md) TODO gdb

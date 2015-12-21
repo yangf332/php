@@ -28,4 +28,7 @@ PHP - 未分类
     - (shmop)[http://php.net/manual/zh/book.shmop.php]
   - System V
   
-
+* session_set_save_handler()
+  - ini_get('session.auto_start') or session_start();
+  - [session_set_save_handler](http://php.net/manual/zh/function.session-set-save-handler.php)
+  - 
